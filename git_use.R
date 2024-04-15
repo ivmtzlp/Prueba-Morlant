@@ -31,3 +31,5 @@ credentials::set_github_pat()
 
 setwd("C:/Users/ivans/Desktop/Trab/Git")
 
+for(i in 1:5){
+  print(5+i)}
