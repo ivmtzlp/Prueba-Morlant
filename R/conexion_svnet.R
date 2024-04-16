@@ -68,7 +68,9 @@ df3<-dbGetQuery(con=pool, "SELECT ine, COUNT(*)
 
 
 query <- "
-  SELECT TOP 10 Id
+  SELECT TOP 10 Id,
+  RESULTADO,
+  JSON_VALUE(RESULTADO,'$.mun') AS mun
   FROM Registros
   WHERE EncuestaId = 82
   
